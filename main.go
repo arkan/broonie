@@ -103,7 +103,7 @@ func main() {
 			fileID = update.Message.Video.FileID
 		} else {
 			log.Printf("[Processing not supported] %#v\n", update.Message)
-			break
+			continue
 		}
 
 		if err := c.downloadFile(fileID, channelID); err != nil {
