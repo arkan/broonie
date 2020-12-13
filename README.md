@@ -1,11 +1,11 @@
 # Telegram Memories Bot
 
-This Telegram bots automatically downloads all the photos and videos from conversations where the bot has been added to.
+This Telegram bots automatically downloads all the photos and videos in real-time from conversations where the bot has been added to.
 This makes it very convenient to save all the memories from family groups for example.
 
 ## Usage
 
-You first need to create a bot on Telegram to retrieve a token. And then you can run the following command:
+You first need to create [a bot on Telegram](https://t.me/botfather) to retrieve a token. And then you can run the following command:
 
 ```
 docker run -e TOKEN="YOUR-TOKEN" -v $(pwd)/my-data:/app/telegram arkan/telegram_memories_bot:0.1.2
