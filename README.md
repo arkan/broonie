@@ -8,7 +8,7 @@ This makes it very convenient to save all the memories from family groups for ex
 You first need to create a bot on Telegram to retrieve a token. And then you can run the following command:
 
 ```
-docker run -e TOKEN="YOUR-TOKEN" -v $(pwd)/my-data:/app/telegram arkan/telegram_memories_bot:0.1.1
+docker run -e TOKEN="YOUR-TOKEN" -v $(pwd)/my-data:/app/telegram arkan/telegram_memories_bot:0.1.2
 ```
 
 ## Copyright
