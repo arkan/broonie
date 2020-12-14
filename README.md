@@ -5,12 +5,23 @@ This makes it very convenient to save all the memories from family groups for ex
 
 ## Usage
 
-You first need to create [a bot on Telegram](https://t.me/botfather) to retrieve a token. And then you can run the following command:
+You first need to create [a bot on Telegram](https://t.me/botfather) to retrieve a token.
 
-```
-docker run -e TOKEN="YOUR-TOKEN" -v $(pwd)/my-data:/app/telegram arkan/telegram_memories_bot:0.1.2
+Then, you need to create your configuration file:
+
+```bash
+$> cp config.json.sample config.json
 ```
 
+Configure it with your own values. You can only run one instance of the bot in parallel.
+So if you want to handle multiple Telegram groups, you can define several entries in the config file.
+
+Then run the application:
+```
+$> go run cmd/bot/main.go
+```
+
+You should expect to see no error. Enjoy!
 ## Copyright
 
 See the [LICENSE](./LICENSE) (MIT) file for more details.

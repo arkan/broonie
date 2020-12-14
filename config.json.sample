@@ -1,0 +1,12 @@
+{
+  "Token": "{YOUR-TOKEN}",
+  "Debug": true,
+  "Rules": [
+    {
+      "Group": "GROUP_NAME",
+      "SkipTelegramChannel": true,
+      "Directory": "/path/where/to/write/files",
+      "SubDirectory": ""
+    }
+  ]
+}
