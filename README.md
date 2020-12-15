@@ -1,7 +1,7 @@
-# Telegram Memories Bot
+# Broonie
 
-This Telegram bots automatically downloads all the photos and videos in real-time from conversations where the bot has been added to.
-This makes it very convenient to save all the memories from family groups for example.
+Broonie is a Telegram bots that automatically downloads all the photos and videos in real-time from conversations where the bot has been added to.
+This makes it very convenient to save all the memories from family Telegram groups and expose them on Plex for example.
 
 ## Usage
 
@@ -14,11 +14,11 @@ $> cp config.json.sample config.json
 ```
 
 Configure it with your own values. You can only run one instance of the bot in parallel.
-So if you want to handle multiple Telegram groups, you can define several entries in the config file.
+So if you want to handle multiple Telegram groups, you have to define several entries in the config file.
 
 Then run the application:
 ```
-$> go run cmd/bot/main.go
+$> go run cmd/broonie/main.go
 ```
 
 You should expect to see no error. Enjoy!

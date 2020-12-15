@@ -1,4 +1,4 @@
-package telegram_memories_bot
+package broonie
 
 import (
 	"encoding/json"

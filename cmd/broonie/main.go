@@ -9,16 +9,16 @@ import (
 	"path"
 	"time"
 
-	"github.com/arkan/telegram_memories_bot"
+	"github.com/arkan/broonie"
 )
 
 func main() {
-	client, err := telegram_memories_bot.NewClient("config.json")
+	client, err := broonie.NewClient("config.json")
 	if err != nil {
 		log.Fatalf("Unable to create new client: %s", err.Error())
 	}
 
-	err = client.HandleNewUploads(func(filename string, url string, rule *telegram_memories_bot.ConfigRule) error {
+	err = client.HandleNewUploads(func(filename string, url string, rule *broonie.ConfigRule) error {
 		now := time.Now().UTC()
 		p := path.Join(
 			rule.Directory,
