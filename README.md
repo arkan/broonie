@@ -1,6 +1,6 @@
 # Broonie
 
-Broonie is a Telegram bots that automatically downloads all the photos and videos in real-time from conversations where the bot has been added to.
+Broonie([why this name?](https://en.wikipedia.org/wiki/Brownie_(folklore))) is a Telegram bots that automatically downloads photos and videos in real-time from conversations where the bot has been added to.
 This makes it very convenient to save all the memories from family Telegram groups and expose them on Plex for example.
 
 ## Usage
