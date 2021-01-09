@@ -96,8 +96,10 @@ func (c *Client) HandleNewUploads(fn func(filename string, url string, rule *Con
 		}
 		file, err := c.bot.GetFile(cfg)
 		if err != nil {
-			return err
+			log.Printf("[failed] Upload GetFile failed: %s", err.Error())
+			continue
 		}
+
 		url := file.Link(c.config.Token)
 		filename := path.Base(file.FilePath)
 		if err := fn(filename, url, rule); err != nil {
