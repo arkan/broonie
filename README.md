@@ -22,6 +22,14 @@ $> go run cmd/broonie/main.go
 ```
 
 You should expect to see no error. Enjoy!
+
+### Docker 
+A Docker image is also available:
+
+```
+docker run -v config.json:/app/config.json:ro arkan/broonie:latest
+```
+
 ## Copyright
 
 See the [LICENSE](./LICENSE) (MIT) file for more details.
